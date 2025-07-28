@@ -1,15 +1,18 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../interfaces/lib.dart';
-import '../models/token_package_model.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:machat_token_service/features/package/interfaces/lib.dart';
+import 'package:machat_token_service/features/package/models/lib.dart';
+import 'package:machat_token_service/firebase_instances/firebase_instance_provider.dart';
 
 /// Firebase 기반 토큰 패키지 서비스 구현체
 class FirebaseTokenPackageService implements ITokenPackageService {
+  final Ref ref;
   final FirebaseFirestore _firestore;
 
   static const String _tokenPackageCollection = 'token_packages';
 
-  FirebaseTokenPackageService({FirebaseFirestore? firestore})
-      : _firestore = firestore ?? FirebaseFirestore.instance;
+  FirebaseTokenPackageService({FirebaseFirestore? firestore, required this.ref})
+      : _firestore = firestore ?? ref.read(firebaseFirestoreProvider);
 
   @override
   Future<List<TokenPackageModel>> getActivePackages() async {

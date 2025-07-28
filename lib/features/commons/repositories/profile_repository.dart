@@ -1,7 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:machat/networks/firestore_provider.dart';
-
-import '../models/token_user_data.dart';
+import 'package:machat_token_service/features/commons/models/token_user_data.dart';
+import 'package:machat_token_service/firebase_instances/firebase_instance_provider.dart';
 
 final tokenProfileRepositoryProvider = Provider<TokenProfileRepository>((ref) {
   return TokenProfileRepository(ref);
@@ -15,7 +14,7 @@ class TokenProfileRepository {
   Future<TokenUserData> getProfile(String userId) async {
     try {
       final userDoc = await ref
-          .read(firestoreProvider)
+          .read(firebaseFirestoreProvider)
           .collection('users')
           .doc(userId)
           .get();

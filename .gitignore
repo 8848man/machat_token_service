@@ -43,3 +43,20 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# build runner generated
+*.g.dart
+*.freezed.dart
+
+# firebase related
+firebase_config.dart
+google-services.json
+.firebase/
+.firebaserc
+firebase.json
+
+# hosting related
+apphosting.yaml
+
+# FVM Version Cache
+.fvm/

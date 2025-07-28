@@ -12,8 +12,7 @@ part of 'snack_bar_manager_data.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$SnackBarManagerData {
@@ -30,9 +29,8 @@ mixin _$SnackBarManagerData {
 /// @nodoc
 abstract class $SnackBarManagerDataCopyWith<$Res> {
   factory $SnackBarManagerDataCopyWith(
-    SnackBarManagerData value,
-    $Res Function(SnackBarManagerData) then,
-  ) = _$SnackBarManagerDataCopyWithImpl<$Res, SnackBarManagerData>;
+          SnackBarManagerData value, $Res Function(SnackBarManagerData) then) =
+      _$SnackBarManagerDataCopyWithImpl<$Res, SnackBarManagerData>;
   @useResult
   $Res call({String text, bool dialogCall});
 }
@@ -51,30 +49,29 @@ class _$SnackBarManagerDataCopyWithImpl<$Res, $Val extends SnackBarManagerData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? text = null, Object? dialogCall = null}) {
-    return _then(
-      _value.copyWith(
-            text: null == text
-                ? _value.text
-                : text // ignore: cast_nullable_to_non_nullable
-                      as String,
-            dialogCall: null == dialogCall
-                ? _value.dialogCall
-                : dialogCall // ignore: cast_nullable_to_non_nullable
-                      as bool,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? text = null,
+    Object? dialogCall = null,
+  }) {
+    return _then(_value.copyWith(
+      text: null == text
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
+      dialogCall: null == dialogCall
+          ? _value.dialogCall
+          : dialogCall // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$SnackBarManagerDataImplCopyWith<$Res>
     implements $SnackBarManagerDataCopyWith<$Res> {
-  factory _$$SnackBarManagerDataImplCopyWith(
-    _$SnackBarManagerDataImpl value,
-    $Res Function(_$SnackBarManagerDataImpl) then,
-  ) = __$$SnackBarManagerDataImplCopyWithImpl<$Res>;
+  factory _$$SnackBarManagerDataImplCopyWith(_$SnackBarManagerDataImpl value,
+          $Res Function(_$SnackBarManagerDataImpl) then) =
+      __$$SnackBarManagerDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String text, bool dialogCall});
@@ -84,38 +81,36 @@ abstract class _$$SnackBarManagerDataImplCopyWith<$Res>
 class __$$SnackBarManagerDataImplCopyWithImpl<$Res>
     extends _$SnackBarManagerDataCopyWithImpl<$Res, _$SnackBarManagerDataImpl>
     implements _$$SnackBarManagerDataImplCopyWith<$Res> {
-  __$$SnackBarManagerDataImplCopyWithImpl(
-    _$SnackBarManagerDataImpl _value,
-    $Res Function(_$SnackBarManagerDataImpl) _then,
-  ) : super(_value, _then);
+  __$$SnackBarManagerDataImplCopyWithImpl(_$SnackBarManagerDataImpl _value,
+      $Res Function(_$SnackBarManagerDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SnackBarManagerData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? text = null, Object? dialogCall = null}) {
-    return _then(
-      _$SnackBarManagerDataImpl(
-        text: null == text
-            ? _value.text
-            : text // ignore: cast_nullable_to_non_nullable
-                  as String,
-        dialogCall: null == dialogCall
-            ? _value.dialogCall
-            : dialogCall // ignore: cast_nullable_to_non_nullable
-                  as bool,
-      ),
-    );
+  $Res call({
+    Object? text = null,
+    Object? dialogCall = null,
+  }) {
+    return _then(_$SnackBarManagerDataImpl(
+      text: null == text
+          ? _value.text
+          : text // ignore: cast_nullable_to_non_nullable
+              as String,
+      dialogCall: null == dialogCall
+          ? _value.dialogCall
+          : dialogCall // ignore: cast_nullable_to_non_nullable
+              as bool,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$SnackBarManagerDataImpl implements _SnackBarManagerData {
-  _$SnackBarManagerDataImpl({
-    this.text = 'init value',
-    this.dialogCall = false,
-  });
+  _$SnackBarManagerDataImpl(
+      {this.text = 'init value', this.dialogCall = false});
 
   @override
   @JsonKey()
@@ -149,9 +144,7 @@ class _$SnackBarManagerDataImpl implements _SnackBarManagerData {
   @pragma('vm:prefer-inline')
   _$$SnackBarManagerDataImplCopyWith<_$SnackBarManagerDataImpl> get copyWith =>
       __$$SnackBarManagerDataImplCopyWithImpl<_$SnackBarManagerDataImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 }
 
 abstract class _SnackBarManagerData implements SnackBarManagerData {

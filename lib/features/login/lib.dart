@@ -2,8 +2,8 @@ library token_login;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:machat/design_system/lib.dart';
-import 'package:machat/features/common/providers/loading_state_provider.dart';
+import 'package:machat_token_service/design_system/lib.dart';
+import 'package:machat_token_service/features/commons/providers/loading_state_provider.dart';
 
 import 'models/login_model.dart';
 import 'view_models/login_view_model.dart';

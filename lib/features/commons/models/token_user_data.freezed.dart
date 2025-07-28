@@ -12,8 +12,7 @@ part of 'token_user_data.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 TokenUserData _$TokenUserDataFromJson(Map<String, dynamic> json) {
   return _TokenUserData.fromJson(json);
@@ -41,18 +40,16 @@ mixin _$TokenUserData {
 /// @nodoc
 abstract class $TokenUserDataCopyWith<$Res> {
   factory $TokenUserDataCopyWith(
-    TokenUserData value,
-    $Res Function(TokenUserData) then,
-  ) = _$TokenUserDataCopyWithImpl<$Res, TokenUserData>;
+          TokenUserData value, $Res Function(TokenUserData) then) =
+      _$TokenUserDataCopyWithImpl<$Res, TokenUserData>;
   @useResult
-  $Res call({
-    String name,
-    String? id,
-    String? email,
-    String? profileUrl,
-    String? nationId,
-    String? role,
-  });
+  $Res call(
+      {String name,
+      String? id,
+      String? email,
+      String? profileUrl,
+      String? nationId,
+      String? role});
 }
 
 /// @nodoc
@@ -77,35 +74,32 @@ class _$TokenUserDataCopyWithImpl<$Res, $Val extends TokenUserData>
     Object? nationId = freezed,
     Object? role = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            name: null == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                      as String,
-            id: freezed == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            email: freezed == email
-                ? _value.email
-                : email // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            profileUrl: freezed == profileUrl
-                ? _value.profileUrl
-                : profileUrl // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            nationId: freezed == nationId
-                ? _value.nationId
-                : nationId // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            role: freezed == role
-                ? _value.role
-                : role // ignore: cast_nullable_to_non_nullable
-                      as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String?,
+      email: freezed == email
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String?,
+      profileUrl: freezed == profileUrl
+          ? _value.profileUrl
+          : profileUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      nationId: freezed == nationId
+          ? _value.nationId
+          : nationId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      role: freezed == role
+          ? _value.role
+          : role // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
@@ -113,19 +107,17 @@ class _$TokenUserDataCopyWithImpl<$Res, $Val extends TokenUserData>
 abstract class _$$TokenUserDataImplCopyWith<$Res>
     implements $TokenUserDataCopyWith<$Res> {
   factory _$$TokenUserDataImplCopyWith(
-    _$TokenUserDataImpl value,
-    $Res Function(_$TokenUserDataImpl) then,
-  ) = __$$TokenUserDataImplCopyWithImpl<$Res>;
+          _$TokenUserDataImpl value, $Res Function(_$TokenUserDataImpl) then) =
+      __$$TokenUserDataImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String name,
-    String? id,
-    String? email,
-    String? profileUrl,
-    String? nationId,
-    String? role,
-  });
+  $Res call(
+      {String name,
+      String? id,
+      String? email,
+      String? profileUrl,
+      String? nationId,
+      String? role});
 }
 
 /// @nodoc
@@ -133,9 +125,8 @@ class __$$TokenUserDataImplCopyWithImpl<$Res>
     extends _$TokenUserDataCopyWithImpl<$Res, _$TokenUserDataImpl>
     implements _$$TokenUserDataImplCopyWith<$Res> {
   __$$TokenUserDataImplCopyWithImpl(
-    _$TokenUserDataImpl _value,
-    $Res Function(_$TokenUserDataImpl) _then,
-  ) : super(_value, _then);
+      _$TokenUserDataImpl _value, $Res Function(_$TokenUserDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of TokenUserData
   /// with the given fields replaced by the non-null parameter values.
@@ -149,48 +140,45 @@ class __$$TokenUserDataImplCopyWithImpl<$Res>
     Object? nationId = freezed,
     Object? role = freezed,
   }) {
-    return _then(
-      _$TokenUserDataImpl(
-        name: null == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                  as String,
-        id: freezed == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                  as String?,
-        email: freezed == email
-            ? _value.email
-            : email // ignore: cast_nullable_to_non_nullable
-                  as String?,
-        profileUrl: freezed == profileUrl
-            ? _value.profileUrl
-            : profileUrl // ignore: cast_nullable_to_non_nullable
-                  as String?,
-        nationId: freezed == nationId
-            ? _value.nationId
-            : nationId // ignore: cast_nullable_to_non_nullable
-                  as String?,
-        role: freezed == role
-            ? _value.role
-            : role // ignore: cast_nullable_to_non_nullable
-                  as String?,
-      ),
-    );
+    return _then(_$TokenUserDataImpl(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String?,
+      email: freezed == email
+          ? _value.email
+          : email // ignore: cast_nullable_to_non_nullable
+              as String?,
+      profileUrl: freezed == profileUrl
+          ? _value.profileUrl
+          : profileUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      nationId: freezed == nationId
+          ? _value.nationId
+          : nationId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      role: freezed == role
+          ? _value.role
+          : role // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$TokenUserDataImpl implements _TokenUserData {
-  const _$TokenUserDataImpl({
-    required this.name,
-    this.id,
-    this.email,
-    this.profileUrl,
-    this.nationId,
-    this.role,
-  });
+  const _$TokenUserDataImpl(
+      {required this.name,
+      this.id,
+      this.email,
+      this.profileUrl,
+      this.nationId,
+      this.role});
 
   factory _$TokenUserDataImpl.fromJson(Map<String, dynamic> json) =>
       _$$TokenUserDataImplFromJson(json);
@@ -243,19 +231,20 @@ class _$TokenUserDataImpl implements _TokenUserData {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$TokenUserDataImplToJson(this);
+    return _$$TokenUserDataImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _TokenUserData implements TokenUserData {
-  const factory _TokenUserData({
-    required final String name,
-    final String? id,
-    final String? email,
-    final String? profileUrl,
-    final String? nationId,
-    final String? role,
-  }) = _$TokenUserDataImpl;
+  const factory _TokenUserData(
+      {required final String name,
+      final String? id,
+      final String? email,
+      final String? profileUrl,
+      final String? nationId,
+      final String? role}) = _$TokenUserDataImpl;
 
   factory _TokenUserData.fromJson(Map<String, dynamic> json) =
       _$TokenUserDataImpl.fromJson;

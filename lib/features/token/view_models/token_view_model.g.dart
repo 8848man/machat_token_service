@@ -12,14 +12,14 @@ String _$tokenViewModelHash() => r'40ad88651302071cbe4a09daa80681b4f6421e0a';
 @ProviderFor(TokenViewModel)
 final tokenViewModelProvider =
     AutoDisposeAsyncNotifierProvider<TokenViewModel, TokenStateModel>.internal(
-      TokenViewModel.new,
-      name: r'tokenViewModelProvider',
-      debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-          ? null
-          : _$tokenViewModelHash,
-      dependencies: null,
-      allTransitiveDependencies: null,
-    );
+  TokenViewModel.new,
+  name: r'tokenViewModelProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$tokenViewModelHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
 
 typedef _$TokenViewModel = AutoDisposeAsyncNotifier<TokenStateModel>;
 // ignore_for_file: type=lint

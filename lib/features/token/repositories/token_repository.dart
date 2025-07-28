@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../providers/firebase_instance_provider.dart';
+import '../../../firebase_instances/firebase_instance_provider.dart';
 import '../interfaces/token_service.dart';
 import '../models/lib.dart';
 
@@ -10,18 +10,19 @@ import '../models/lib.dart';
 
 final tokenServiceProvider = Provider<ITokenService>((ref) {
   final firestore = ref.read(firebaseFirestoreProvider);
-  return FirebaseTokenService(firestore: firestore);
+  return FirebaseTokenService(firestore: firestore, ref: ref);
 });
 
 /// Firebase 기반 토큰 서비스 구현체
 class FirebaseTokenService implements ITokenService {
+  final Ref ref;
   final FirebaseFirestore _firestore;
 
   static const String _tokenCollection = 'token';
   static const String _tokenLogCollection = 'token_log';
 
-  FirebaseTokenService({FirebaseFirestore? firestore})
-      : _firestore = firestore ?? FirebaseFirestore.instance;
+  FirebaseTokenService({FirebaseFirestore? firestore, required this.ref})
+      : _firestore = firestore ?? ref.read(firebaseFirestoreProvider);
 
   @override
   Stream<TokenModel> watchUserToken(String userId) {

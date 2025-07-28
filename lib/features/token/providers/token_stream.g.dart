@@ -33,7 +33,9 @@ abstract class _$TokenStream
     extends BuildlessAutoDisposeStreamNotifier<TokenModel> {
   late final String userId;
 
-  Stream<TokenModel> build(String userId);
+  Stream<TokenModel> build(
+    String userId,
+  );
 }
 
 /// See also [TokenStream].
@@ -46,15 +48,21 @@ class TokenStreamFamily extends Family<AsyncValue<TokenModel>> {
   const TokenStreamFamily();
 
   /// See also [TokenStream].
-  TokenStreamProvider call(String userId) {
-    return TokenStreamProvider(userId);
+  TokenStreamProvider call(
+    String userId,
+  ) {
+    return TokenStreamProvider(
+      userId,
+    );
   }
 
   @override
   TokenStreamProvider getProviderOverride(
     covariant TokenStreamProvider provider,
   ) {
-    return call(provider.userId);
+    return call(
+      provider.userId,
+    );
   }
 
   static const Iterable<ProviderOrFamily>? _dependencies = null;
@@ -76,18 +84,21 @@ class TokenStreamFamily extends Family<AsyncValue<TokenModel>> {
 class TokenStreamProvider
     extends AutoDisposeStreamNotifierProviderImpl<TokenStream, TokenModel> {
   /// See also [TokenStream].
-  TokenStreamProvider(String userId)
-    : this._internal(
-        () => TokenStream()..userId = userId,
-        from: tokenStreamProvider,
-        name: r'tokenStreamProvider',
-        debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-            ? null
-            : _$tokenStreamHash,
-        dependencies: TokenStreamFamily._dependencies,
-        allTransitiveDependencies: TokenStreamFamily._allTransitiveDependencies,
-        userId: userId,
-      );
+  TokenStreamProvider(
+    String userId,
+  ) : this._internal(
+          () => TokenStream()..userId = userId,
+          from: tokenStreamProvider,
+          name: r'tokenStreamProvider',
+          debugGetCreateSourceHash:
+              const bool.fromEnvironment('dart.vm.product')
+                  ? null
+                  : _$tokenStreamHash,
+          dependencies: TokenStreamFamily._dependencies,
+          allTransitiveDependencies:
+              TokenStreamFamily._allTransitiveDependencies,
+          userId: userId,
+        );
 
   TokenStreamProvider._internal(
     super._createNotifier, {
@@ -102,8 +113,12 @@ class TokenStreamProvider
   final String userId;
 
   @override
-  Stream<TokenModel> runNotifierBuild(covariant TokenStream notifier) {
-    return notifier.build(userId);
+  Stream<TokenModel> runNotifierBuild(
+    covariant TokenStream notifier,
+  ) {
+    return notifier.build(
+      userId,
+    );
   }
 
   @override
@@ -124,7 +139,7 @@ class TokenStreamProvider
 
   @override
   AutoDisposeStreamNotifierProviderElement<TokenStream, TokenModel>
-  createElement() {
+      createElement() {
     return _TokenStreamProviderElement(this);
   }
 
@@ -157,6 +172,5 @@ class _TokenStreamProviderElement
   @override
   String get userId => (origin as TokenStreamProvider).userId;
 }
-
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

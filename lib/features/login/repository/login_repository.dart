@@ -1,17 +1,17 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:machat_token_service/firebase_instances/firebase_instance_provider.dart';
 
 final loginRepositoryProvider = Provider<LoginRepository>((ref) {
-  return LoginRepository();
+  return LoginRepository(ref: ref);
 });
 
 class LoginRepository {
-  LoginRepository();
+  final Ref ref;
+  LoginRepository({required this.ref});
   // Login 메서드 추가
   Future<bool> login(String username, String password) async {
     try {
-      final auth = FirebaseAuth.instance;
+      final auth = ref.read(firebaseAuthProvider);
       await auth.signInWithEmailAndPassword(
           email: username, password: password);
       return true;
@@ -24,7 +24,8 @@ class LoginRepository {
   Future<Map<String, dynamic>> getUserProfile(String userId) async {
     try {
       // Firestore 컬렉션에서 유저 문서를 가져오기
-      final doc = await FirebaseFirestore.instance
+      final doc = await ref
+          .read(firebaseFirestoreProvider)
           .collection('users')
           .doc(userId)
           .get();

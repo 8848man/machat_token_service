@@ -12,8 +12,7 @@ part of 'token_package_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 TokenPackageModel _$TokenPackageModelFromJson(Map<String, dynamic> json) {
   return _TokenPackageModel.fromJson(json);
@@ -48,25 +47,23 @@ mixin _$TokenPackageModel {
 /// @nodoc
 abstract class $TokenPackageModelCopyWith<$Res> {
   factory $TokenPackageModelCopyWith(
-    TokenPackageModel value,
-    $Res Function(TokenPackageModel) then,
-  ) = _$TokenPackageModelCopyWithImpl<$Res, TokenPackageModel>;
+          TokenPackageModel value, $Res Function(TokenPackageModel) then) =
+      _$TokenPackageModelCopyWithImpl<$Res, TokenPackageModel>;
   @useResult
-  $Res call({
-    String id,
-    String name,
-    String description,
-    int tokenAmount,
-    double price,
-    String currency,
-    bool isActive,
-    bool isPopular,
-    int? bonusTokens,
-    String? imageUrl,
-    Map<String, dynamic>? metadata,
-    DateTime createdAt,
-    DateTime updatedAt,
-  });
+  $Res call(
+      {String id,
+      String name,
+      String description,
+      int tokenAmount,
+      double price,
+      String currency,
+      bool isActive,
+      bool isPopular,
+      int? bonusTokens,
+      String? imageUrl,
+      Map<String, dynamic>? metadata,
+      DateTime createdAt,
+      DateTime updatedAt});
 }
 
 /// @nodoc
@@ -98,100 +95,94 @@ class _$TokenPackageModelCopyWithImpl<$Res, $Val extends TokenPackageModel>
     Object? createdAt = null,
     Object? updatedAt = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id: null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                      as String,
-            name: null == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                      as String,
-            description: null == description
-                ? _value.description
-                : description // ignore: cast_nullable_to_non_nullable
-                      as String,
-            tokenAmount: null == tokenAmount
-                ? _value.tokenAmount
-                : tokenAmount // ignore: cast_nullable_to_non_nullable
-                      as int,
-            price: null == price
-                ? _value.price
-                : price // ignore: cast_nullable_to_non_nullable
-                      as double,
-            currency: null == currency
-                ? _value.currency
-                : currency // ignore: cast_nullable_to_non_nullable
-                      as String,
-            isActive: null == isActive
-                ? _value.isActive
-                : isActive // ignore: cast_nullable_to_non_nullable
-                      as bool,
-            isPopular: null == isPopular
-                ? _value.isPopular
-                : isPopular // ignore: cast_nullable_to_non_nullable
-                      as bool,
-            bonusTokens: freezed == bonusTokens
-                ? _value.bonusTokens
-                : bonusTokens // ignore: cast_nullable_to_non_nullable
-                      as int?,
-            imageUrl: freezed == imageUrl
-                ? _value.imageUrl
-                : imageUrl // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            metadata: freezed == metadata
-                ? _value.metadata
-                : metadata // ignore: cast_nullable_to_non_nullable
-                      as Map<String, dynamic>?,
-            createdAt: null == createdAt
-                ? _value.createdAt
-                : createdAt // ignore: cast_nullable_to_non_nullable
-                      as DateTime,
-            updatedAt: null == updatedAt
-                ? _value.updatedAt
-                : updatedAt // ignore: cast_nullable_to_non_nullable
-                      as DateTime,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: null == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      tokenAmount: null == tokenAmount
+          ? _value.tokenAmount
+          : tokenAmount // ignore: cast_nullable_to_non_nullable
+              as int,
+      price: null == price
+          ? _value.price
+          : price // ignore: cast_nullable_to_non_nullable
+              as double,
+      currency: null == currency
+          ? _value.currency
+          : currency // ignore: cast_nullable_to_non_nullable
+              as String,
+      isActive: null == isActive
+          ? _value.isActive
+          : isActive // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isPopular: null == isPopular
+          ? _value.isPopular
+          : isPopular // ignore: cast_nullable_to_non_nullable
+              as bool,
+      bonusTokens: freezed == bonusTokens
+          ? _value.bonusTokens
+          : bonusTokens // ignore: cast_nullable_to_non_nullable
+              as int?,
+      imageUrl: freezed == imageUrl
+          ? _value.imageUrl
+          : imageUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      metadata: freezed == metadata
+          ? _value.metadata
+          : metadata // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      updatedAt: null == updatedAt
+          ? _value.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$TokenPackageModelImplCopyWith<$Res>
     implements $TokenPackageModelCopyWith<$Res> {
-  factory _$$TokenPackageModelImplCopyWith(
-    _$TokenPackageModelImpl value,
-    $Res Function(_$TokenPackageModelImpl) then,
-  ) = __$$TokenPackageModelImplCopyWithImpl<$Res>;
+  factory _$$TokenPackageModelImplCopyWith(_$TokenPackageModelImpl value,
+          $Res Function(_$TokenPackageModelImpl) then) =
+      __$$TokenPackageModelImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    String name,
-    String description,
-    int tokenAmount,
-    double price,
-    String currency,
-    bool isActive,
-    bool isPopular,
-    int? bonusTokens,
-    String? imageUrl,
-    Map<String, dynamic>? metadata,
-    DateTime createdAt,
-    DateTime updatedAt,
-  });
+  $Res call(
+      {String id,
+      String name,
+      String description,
+      int tokenAmount,
+      double price,
+      String currency,
+      bool isActive,
+      bool isPopular,
+      int? bonusTokens,
+      String? imageUrl,
+      Map<String, dynamic>? metadata,
+      DateTime createdAt,
+      DateTime updatedAt});
 }
 
 /// @nodoc
 class __$$TokenPackageModelImplCopyWithImpl<$Res>
     extends _$TokenPackageModelCopyWithImpl<$Res, _$TokenPackageModelImpl>
     implements _$$TokenPackageModelImplCopyWith<$Res> {
-  __$$TokenPackageModelImplCopyWithImpl(
-    _$TokenPackageModelImpl _value,
-    $Res Function(_$TokenPackageModelImpl) _then,
-  ) : super(_value, _then);
+  __$$TokenPackageModelImplCopyWithImpl(_$TokenPackageModelImpl _value,
+      $Res Function(_$TokenPackageModelImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of TokenPackageModel
   /// with the given fields replaced by the non-null parameter values.
@@ -212,83 +203,81 @@ class __$$TokenPackageModelImplCopyWithImpl<$Res>
     Object? createdAt = null,
     Object? updatedAt = null,
   }) {
-    return _then(
-      _$TokenPackageModelImpl(
-        id: null == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                  as String,
-        name: null == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                  as String,
-        description: null == description
-            ? _value.description
-            : description // ignore: cast_nullable_to_non_nullable
-                  as String,
-        tokenAmount: null == tokenAmount
-            ? _value.tokenAmount
-            : tokenAmount // ignore: cast_nullable_to_non_nullable
-                  as int,
-        price: null == price
-            ? _value.price
-            : price // ignore: cast_nullable_to_non_nullable
-                  as double,
-        currency: null == currency
-            ? _value.currency
-            : currency // ignore: cast_nullable_to_non_nullable
-                  as String,
-        isActive: null == isActive
-            ? _value.isActive
-            : isActive // ignore: cast_nullable_to_non_nullable
-                  as bool,
-        isPopular: null == isPopular
-            ? _value.isPopular
-            : isPopular // ignore: cast_nullable_to_non_nullable
-                  as bool,
-        bonusTokens: freezed == bonusTokens
-            ? _value.bonusTokens
-            : bonusTokens // ignore: cast_nullable_to_non_nullable
-                  as int?,
-        imageUrl: freezed == imageUrl
-            ? _value.imageUrl
-            : imageUrl // ignore: cast_nullable_to_non_nullable
-                  as String?,
-        metadata: freezed == metadata
-            ? _value._metadata
-            : metadata // ignore: cast_nullable_to_non_nullable
-                  as Map<String, dynamic>?,
-        createdAt: null == createdAt
-            ? _value.createdAt
-            : createdAt // ignore: cast_nullable_to_non_nullable
-                  as DateTime,
-        updatedAt: null == updatedAt
-            ? _value.updatedAt
-            : updatedAt // ignore: cast_nullable_to_non_nullable
-                  as DateTime,
-      ),
-    );
+    return _then(_$TokenPackageModelImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      description: null == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String,
+      tokenAmount: null == tokenAmount
+          ? _value.tokenAmount
+          : tokenAmount // ignore: cast_nullable_to_non_nullable
+              as int,
+      price: null == price
+          ? _value.price
+          : price // ignore: cast_nullable_to_non_nullable
+              as double,
+      currency: null == currency
+          ? _value.currency
+          : currency // ignore: cast_nullable_to_non_nullable
+              as String,
+      isActive: null == isActive
+          ? _value.isActive
+          : isActive // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isPopular: null == isPopular
+          ? _value.isPopular
+          : isPopular // ignore: cast_nullable_to_non_nullable
+              as bool,
+      bonusTokens: freezed == bonusTokens
+          ? _value.bonusTokens
+          : bonusTokens // ignore: cast_nullable_to_non_nullable
+              as int?,
+      imageUrl: freezed == imageUrl
+          ? _value.imageUrl
+          : imageUrl // ignore: cast_nullable_to_non_nullable
+              as String?,
+      metadata: freezed == metadata
+          ? _value._metadata
+          : metadata // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      updatedAt: null == updatedAt
+          ? _value.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$TokenPackageModelImpl implements _TokenPackageModel {
-  const _$TokenPackageModelImpl({
-    required this.id,
-    required this.name,
-    required this.description,
-    required this.tokenAmount,
-    required this.price,
-    this.currency = 'KRW',
-    this.isActive = true,
-    this.isPopular = false,
-    this.bonusTokens,
-    this.imageUrl,
-    final Map<String, dynamic>? metadata,
-    required this.createdAt,
-    required this.updatedAt,
-  }) : _metadata = metadata;
+  const _$TokenPackageModelImpl(
+      {required this.id,
+      required this.name,
+      required this.description,
+      required this.tokenAmount,
+      required this.price,
+      this.currency = 'KRW',
+      this.isActive = true,
+      this.isPopular = false,
+      this.bonusTokens,
+      this.imageUrl,
+      final Map<String, dynamic>? metadata,
+      required this.createdAt,
+      required this.updatedAt})
+      : _metadata = metadata;
 
   factory _$TokenPackageModelImpl.fromJson(Map<String, dynamic> json) =>
       _$$TokenPackageModelImplFromJson(json);
@@ -368,21 +357,20 @@ class _$TokenPackageModelImpl implements _TokenPackageModel {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    name,
-    description,
-    tokenAmount,
-    price,
-    currency,
-    isActive,
-    isPopular,
-    bonusTokens,
-    imageUrl,
-    const DeepCollectionEquality().hash(_metadata),
-    createdAt,
-    updatedAt,
-  );
+      runtimeType,
+      id,
+      name,
+      description,
+      tokenAmount,
+      price,
+      currency,
+      isActive,
+      isPopular,
+      bonusTokens,
+      imageUrl,
+      const DeepCollectionEquality().hash(_metadata),
+      createdAt,
+      updatedAt);
 
   /// Create a copy of TokenPackageModel
   /// with the given fields replaced by the non-null parameter values.
@@ -391,32 +379,31 @@ class _$TokenPackageModelImpl implements _TokenPackageModel {
   @pragma('vm:prefer-inline')
   _$$TokenPackageModelImplCopyWith<_$TokenPackageModelImpl> get copyWith =>
       __$$TokenPackageModelImplCopyWithImpl<_$TokenPackageModelImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$TokenPackageModelImplToJson(this);
+    return _$$TokenPackageModelImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _TokenPackageModel implements TokenPackageModel {
-  const factory _TokenPackageModel({
-    required final String id,
-    required final String name,
-    required final String description,
-    required final int tokenAmount,
-    required final double price,
-    final String currency,
-    final bool isActive,
-    final bool isPopular,
-    final int? bonusTokens,
-    final String? imageUrl,
-    final Map<String, dynamic>? metadata,
-    required final DateTime createdAt,
-    required final DateTime updatedAt,
-  }) = _$TokenPackageModelImpl;
+  const factory _TokenPackageModel(
+      {required final String id,
+      required final String name,
+      required final String description,
+      required final int tokenAmount,
+      required final double price,
+      final String currency,
+      final bool isActive,
+      final bool isPopular,
+      final int? bonusTokens,
+      final String? imageUrl,
+      final Map<String, dynamic>? metadata,
+      required final DateTime createdAt,
+      required final DateTime updatedAt}) = _$TokenPackageModelImpl;
 
   factory _TokenPackageModel.fromJson(Map<String, dynamic> json) =
       _$TokenPackageModelImpl.fromJson;

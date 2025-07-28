@@ -90,6 +90,6 @@ abstract class ITokenPaymentService {
 abstract class IPackageRegisterService {
   Future<bool> registPackage(TokenPackageModel data);
   Future<bool> updatePacakge(TokenPackageModel data);
-  Future<bool> deletePacakge(String id);
+  Future<bool> deletePackage(String id);
   Future<TokenPackageModel> fetchPackageById(String id);
 }

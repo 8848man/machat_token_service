@@ -12,8 +12,7 @@ part of 'login_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$LoginModel {
@@ -30,9 +29,8 @@ mixin _$LoginModel {
 /// @nodoc
 abstract class $LoginModelCopyWith<$Res> {
   factory $LoginModelCopyWith(
-    LoginModel value,
-    $Res Function(LoginModel) then,
-  ) = _$LoginModelCopyWithImpl<$Res, LoginModel>;
+          LoginModel value, $Res Function(LoginModel) then) =
+      _$LoginModelCopyWithImpl<$Res, LoginModel>;
   @useResult
   $Res call({String? emailErrorText, String? pwdErrorText});
 }
@@ -55,19 +53,16 @@ class _$LoginModelCopyWithImpl<$Res, $Val extends LoginModel>
     Object? emailErrorText = freezed,
     Object? pwdErrorText = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            emailErrorText: freezed == emailErrorText
-                ? _value.emailErrorText
-                : emailErrorText // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            pwdErrorText: freezed == pwdErrorText
-                ? _value.pwdErrorText
-                : pwdErrorText // ignore: cast_nullable_to_non_nullable
-                      as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      emailErrorText: freezed == emailErrorText
+          ? _value.emailErrorText
+          : emailErrorText // ignore: cast_nullable_to_non_nullable
+              as String?,
+      pwdErrorText: freezed == pwdErrorText
+          ? _value.pwdErrorText
+          : pwdErrorText // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
@@ -75,9 +70,8 @@ class _$LoginModelCopyWithImpl<$Res, $Val extends LoginModel>
 abstract class _$$LoginModelImplCopyWith<$Res>
     implements $LoginModelCopyWith<$Res> {
   factory _$$LoginModelImplCopyWith(
-    _$LoginModelImpl value,
-    $Res Function(_$LoginModelImpl) then,
-  ) = __$$LoginModelImplCopyWithImpl<$Res>;
+          _$LoginModelImpl value, $Res Function(_$LoginModelImpl) then) =
+      __$$LoginModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? emailErrorText, String? pwdErrorText});
@@ -88,9 +82,8 @@ class __$$LoginModelImplCopyWithImpl<$Res>
     extends _$LoginModelCopyWithImpl<$Res, _$LoginModelImpl>
     implements _$$LoginModelImplCopyWith<$Res> {
   __$$LoginModelImplCopyWithImpl(
-    _$LoginModelImpl _value,
-    $Res Function(_$LoginModelImpl) _then,
-  ) : super(_value, _then);
+      _$LoginModelImpl _value, $Res Function(_$LoginModelImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of LoginModel
   /// with the given fields replaced by the non-null parameter values.
@@ -100,28 +93,24 @@ class __$$LoginModelImplCopyWithImpl<$Res>
     Object? emailErrorText = freezed,
     Object? pwdErrorText = freezed,
   }) {
-    return _then(
-      _$LoginModelImpl(
-        emailErrorText: freezed == emailErrorText
-            ? _value.emailErrorText
-            : emailErrorText // ignore: cast_nullable_to_non_nullable
-                  as String?,
-        pwdErrorText: freezed == pwdErrorText
-            ? _value.pwdErrorText
-            : pwdErrorText // ignore: cast_nullable_to_non_nullable
-                  as String?,
-      ),
-    );
+    return _then(_$LoginModelImpl(
+      emailErrorText: freezed == emailErrorText
+          ? _value.emailErrorText
+          : emailErrorText // ignore: cast_nullable_to_non_nullable
+              as String?,
+      pwdErrorText: freezed == pwdErrorText
+          ? _value.pwdErrorText
+          : pwdErrorText // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$LoginModelImpl implements _LoginModel {
-  const _$LoginModelImpl({
-    this.emailErrorText = null,
-    this.pwdErrorText = null,
-  });
+  const _$LoginModelImpl(
+      {this.emailErrorText = null, this.pwdErrorText = null});
 
   @override
   @JsonKey()
@@ -159,10 +148,9 @@ class _$LoginModelImpl implements _LoginModel {
 }
 
 abstract class _LoginModel implements LoginModel {
-  const factory _LoginModel({
-    final String? emailErrorText,
-    final String? pwdErrorText,
-  }) = _$LoginModelImpl;
+  const factory _LoginModel(
+      {final String? emailErrorText,
+      final String? pwdErrorText}) = _$LoginModelImpl;
 
   @override
   String? get emailErrorText;

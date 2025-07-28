@@ -12,8 +12,7 @@ part of 'token_state_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$TokenStateModel {
@@ -32,16 +31,14 @@ mixin _$TokenStateModel {
 /// @nodoc
 abstract class $TokenStateModelCopyWith<$Res> {
   factory $TokenStateModelCopyWith(
-    TokenStateModel value,
-    $Res Function(TokenStateModel) then,
-  ) = _$TokenStateModelCopyWithImpl<$Res, TokenStateModel>;
+          TokenStateModel value, $Res Function(TokenStateModel) then) =
+      _$TokenStateModelCopyWithImpl<$Res, TokenStateModel>;
   @useResult
-  $Res call({
-    TokenModel? userToken,
-    List<TokenLogModel> tokenLogs,
-    bool isLoading,
-    String? error,
-  });
+  $Res call(
+      {TokenModel? userToken,
+      List<TokenLogModel> tokenLogs,
+      bool isLoading,
+      String? error});
 
   $TokenModelCopyWith<$Res>? get userToken;
 }
@@ -66,27 +63,24 @@ class _$TokenStateModelCopyWithImpl<$Res, $Val extends TokenStateModel>
     Object? isLoading = null,
     Object? error = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            userToken: freezed == userToken
-                ? _value.userToken
-                : userToken // ignore: cast_nullable_to_non_nullable
-                      as TokenModel?,
-            tokenLogs: null == tokenLogs
-                ? _value.tokenLogs
-                : tokenLogs // ignore: cast_nullable_to_non_nullable
-                      as List<TokenLogModel>,
-            isLoading: null == isLoading
-                ? _value.isLoading
-                : isLoading // ignore: cast_nullable_to_non_nullable
-                      as bool,
-            error: freezed == error
-                ? _value.error
-                : error // ignore: cast_nullable_to_non_nullable
-                      as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      userToken: freezed == userToken
+          ? _value.userToken
+          : userToken // ignore: cast_nullable_to_non_nullable
+              as TokenModel?,
+      tokenLogs: null == tokenLogs
+          ? _value.tokenLogs
+          : tokenLogs // ignore: cast_nullable_to_non_nullable
+              as List<TokenLogModel>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      error: freezed == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 
   /// Create a copy of TokenStateModel
@@ -107,18 +101,16 @@ class _$TokenStateModelCopyWithImpl<$Res, $Val extends TokenStateModel>
 /// @nodoc
 abstract class _$$TokenStateModelImplCopyWith<$Res>
     implements $TokenStateModelCopyWith<$Res> {
-  factory _$$TokenStateModelImplCopyWith(
-    _$TokenStateModelImpl value,
-    $Res Function(_$TokenStateModelImpl) then,
-  ) = __$$TokenStateModelImplCopyWithImpl<$Res>;
+  factory _$$TokenStateModelImplCopyWith(_$TokenStateModelImpl value,
+          $Res Function(_$TokenStateModelImpl) then) =
+      __$$TokenStateModelImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    TokenModel? userToken,
-    List<TokenLogModel> tokenLogs,
-    bool isLoading,
-    String? error,
-  });
+  $Res call(
+      {TokenModel? userToken,
+      List<TokenLogModel> tokenLogs,
+      bool isLoading,
+      String? error});
 
   @override
   $TokenModelCopyWith<$Res>? get userToken;
@@ -129,9 +121,8 @@ class __$$TokenStateModelImplCopyWithImpl<$Res>
     extends _$TokenStateModelCopyWithImpl<$Res, _$TokenStateModelImpl>
     implements _$$TokenStateModelImplCopyWith<$Res> {
   __$$TokenStateModelImplCopyWithImpl(
-    _$TokenStateModelImpl _value,
-    $Res Function(_$TokenStateModelImpl) _then,
-  ) : super(_value, _then);
+      _$TokenStateModelImpl _value, $Res Function(_$TokenStateModelImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of TokenStateModel
   /// with the given fields replaced by the non-null parameter values.
@@ -143,38 +134,36 @@ class __$$TokenStateModelImplCopyWithImpl<$Res>
     Object? isLoading = null,
     Object? error = freezed,
   }) {
-    return _then(
-      _$TokenStateModelImpl(
-        userToken: freezed == userToken
-            ? _value.userToken
-            : userToken // ignore: cast_nullable_to_non_nullable
-                  as TokenModel?,
-        tokenLogs: null == tokenLogs
-            ? _value._tokenLogs
-            : tokenLogs // ignore: cast_nullable_to_non_nullable
-                  as List<TokenLogModel>,
-        isLoading: null == isLoading
-            ? _value.isLoading
-            : isLoading // ignore: cast_nullable_to_non_nullable
-                  as bool,
-        error: freezed == error
-            ? _value.error
-            : error // ignore: cast_nullable_to_non_nullable
-                  as String?,
-      ),
-    );
+    return _then(_$TokenStateModelImpl(
+      userToken: freezed == userToken
+          ? _value.userToken
+          : userToken // ignore: cast_nullable_to_non_nullable
+              as TokenModel?,
+      tokenLogs: null == tokenLogs
+          ? _value._tokenLogs
+          : tokenLogs // ignore: cast_nullable_to_non_nullable
+              as List<TokenLogModel>,
+      isLoading: null == isLoading
+          ? _value.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      error: freezed == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
 /// @nodoc
 
 class _$TokenStateModelImpl implements _TokenStateModel {
-  const _$TokenStateModelImpl({
-    this.userToken,
-    final List<TokenLogModel> tokenLogs = const [],
-    this.isLoading = false,
-    this.error,
-  }) : _tokenLogs = tokenLogs;
+  const _$TokenStateModelImpl(
+      {this.userToken,
+      final List<TokenLogModel> tokenLogs = const [],
+      this.isLoading = false,
+      this.error})
+      : _tokenLogs = tokenLogs;
 
   @override
   final TokenModel? userToken;
@@ -205,23 +194,16 @@ class _$TokenStateModelImpl implements _TokenStateModel {
             other is _$TokenStateModelImpl &&
             (identical(other.userToken, userToken) ||
                 other.userToken == userToken) &&
-            const DeepCollectionEquality().equals(
-              other._tokenLogs,
-              _tokenLogs,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._tokenLogs, _tokenLogs) &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    userToken,
-    const DeepCollectionEquality().hash(_tokenLogs),
-    isLoading,
-    error,
-  );
+  int get hashCode => Object.hash(runtimeType, userToken,
+      const DeepCollectionEquality().hash(_tokenLogs), isLoading, error);
 
   /// Create a copy of TokenStateModel
   /// with the given fields replaced by the non-null parameter values.
@@ -230,18 +212,15 @@ class _$TokenStateModelImpl implements _TokenStateModel {
   @pragma('vm:prefer-inline')
   _$$TokenStateModelImplCopyWith<_$TokenStateModelImpl> get copyWith =>
       __$$TokenStateModelImplCopyWithImpl<_$TokenStateModelImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 }
 
 abstract class _TokenStateModel implements TokenStateModel {
-  const factory _TokenStateModel({
-    final TokenModel? userToken,
-    final List<TokenLogModel> tokenLogs,
-    final bool isLoading,
-    final String? error,
-  }) = _$TokenStateModelImpl;
+  const factory _TokenStateModel(
+      {final TokenModel? userToken,
+      final List<TokenLogModel> tokenLogs,
+      final bool isLoading,
+      final String? error}) = _$TokenStateModelImpl;
 
   @override
   TokenModel? get userToken;

@@ -12,8 +12,7 @@ part of 'token_log_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 TokenLogModel _$TokenLogModelFromJson(Map<String, dynamic> json) {
   return _TokenLogModel.fromJson(json);
@@ -44,21 +43,19 @@ mixin _$TokenLogModel {
 /// @nodoc
 abstract class $TokenLogModelCopyWith<$Res> {
   factory $TokenLogModelCopyWith(
-    TokenLogModel value,
-    $Res Function(TokenLogModel) then,
-  ) = _$TokenLogModelCopyWithImpl<$Res, TokenLogModel>;
+          TokenLogModel value, $Res Function(TokenLogModel) then) =
+      _$TokenLogModelCopyWithImpl<$Res, TokenLogModel>;
   @useResult
-  $Res call({
-    String id,
-    String userId,
-    TokenLogType type,
-    int amount,
-    int balanceBefore,
-    int balanceAfter,
-    String? description,
-    Map<String, dynamic>? metadata,
-    DateTime createdAt,
-  });
+  $Res call(
+      {String id,
+      String userId,
+      TokenLogType type,
+      int amount,
+      int balanceBefore,
+      int balanceAfter,
+      String? description,
+      Map<String, dynamic>? metadata,
+      DateTime createdAt});
 }
 
 /// @nodoc
@@ -86,47 +83,44 @@ class _$TokenLogModelCopyWithImpl<$Res, $Val extends TokenLogModel>
     Object? metadata = freezed,
     Object? createdAt = null,
   }) {
-    return _then(
-      _value.copyWith(
-            id: null == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                      as String,
-            userId: null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                      as String,
-            type: null == type
-                ? _value.type
-                : type // ignore: cast_nullable_to_non_nullable
-                      as TokenLogType,
-            amount: null == amount
-                ? _value.amount
-                : amount // ignore: cast_nullable_to_non_nullable
-                      as int,
-            balanceBefore: null == balanceBefore
-                ? _value.balanceBefore
-                : balanceBefore // ignore: cast_nullable_to_non_nullable
-                      as int,
-            balanceAfter: null == balanceAfter
-                ? _value.balanceAfter
-                : balanceAfter // ignore: cast_nullable_to_non_nullable
-                      as int,
-            description: freezed == description
-                ? _value.description
-                : description // ignore: cast_nullable_to_non_nullable
-                      as String?,
-            metadata: freezed == metadata
-                ? _value.metadata
-                : metadata // ignore: cast_nullable_to_non_nullable
-                      as Map<String, dynamic>?,
-            createdAt: null == createdAt
-                ? _value.createdAt
-                : createdAt // ignore: cast_nullable_to_non_nullable
-                      as DateTime,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      type: null == type
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as TokenLogType,
+      amount: null == amount
+          ? _value.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as int,
+      balanceBefore: null == balanceBefore
+          ? _value.balanceBefore
+          : balanceBefore // ignore: cast_nullable_to_non_nullable
+              as int,
+      balanceAfter: null == balanceAfter
+          ? _value.balanceAfter
+          : balanceAfter // ignore: cast_nullable_to_non_nullable
+              as int,
+      description: freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      metadata: freezed == metadata
+          ? _value.metadata
+          : metadata // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+    ) as $Val);
   }
 }
 
@@ -134,22 +128,20 @@ class _$TokenLogModelCopyWithImpl<$Res, $Val extends TokenLogModel>
 abstract class _$$TokenLogModelImplCopyWith<$Res>
     implements $TokenLogModelCopyWith<$Res> {
   factory _$$TokenLogModelImplCopyWith(
-    _$TokenLogModelImpl value,
-    $Res Function(_$TokenLogModelImpl) then,
-  ) = __$$TokenLogModelImplCopyWithImpl<$Res>;
+          _$TokenLogModelImpl value, $Res Function(_$TokenLogModelImpl) then) =
+      __$$TokenLogModelImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String id,
-    String userId,
-    TokenLogType type,
-    int amount,
-    int balanceBefore,
-    int balanceAfter,
-    String? description,
-    Map<String, dynamic>? metadata,
-    DateTime createdAt,
-  });
+  $Res call(
+      {String id,
+      String userId,
+      TokenLogType type,
+      int amount,
+      int balanceBefore,
+      int balanceAfter,
+      String? description,
+      Map<String, dynamic>? metadata,
+      DateTime createdAt});
 }
 
 /// @nodoc
@@ -157,9 +149,8 @@ class __$$TokenLogModelImplCopyWithImpl<$Res>
     extends _$TokenLogModelCopyWithImpl<$Res, _$TokenLogModelImpl>
     implements _$$TokenLogModelImplCopyWith<$Res> {
   __$$TokenLogModelImplCopyWithImpl(
-    _$TokenLogModelImpl _value,
-    $Res Function(_$TokenLogModelImpl) _then,
-  ) : super(_value, _then);
+      _$TokenLogModelImpl _value, $Res Function(_$TokenLogModelImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of TokenLogModel
   /// with the given fields replaced by the non-null parameter values.
@@ -176,63 +167,61 @@ class __$$TokenLogModelImplCopyWithImpl<$Res>
     Object? metadata = freezed,
     Object? createdAt = null,
   }) {
-    return _then(
-      _$TokenLogModelImpl(
-        id: null == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                  as String,
-        userId: null == userId
-            ? _value.userId
-            : userId // ignore: cast_nullable_to_non_nullable
-                  as String,
-        type: null == type
-            ? _value.type
-            : type // ignore: cast_nullable_to_non_nullable
-                  as TokenLogType,
-        amount: null == amount
-            ? _value.amount
-            : amount // ignore: cast_nullable_to_non_nullable
-                  as int,
-        balanceBefore: null == balanceBefore
-            ? _value.balanceBefore
-            : balanceBefore // ignore: cast_nullable_to_non_nullable
-                  as int,
-        balanceAfter: null == balanceAfter
-            ? _value.balanceAfter
-            : balanceAfter // ignore: cast_nullable_to_non_nullable
-                  as int,
-        description: freezed == description
-            ? _value.description
-            : description // ignore: cast_nullable_to_non_nullable
-                  as String?,
-        metadata: freezed == metadata
-            ? _value._metadata
-            : metadata // ignore: cast_nullable_to_non_nullable
-                  as Map<String, dynamic>?,
-        createdAt: null == createdAt
-            ? _value.createdAt
-            : createdAt // ignore: cast_nullable_to_non_nullable
-                  as DateTime,
-      ),
-    );
+    return _then(_$TokenLogModelImpl(
+      id: null == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      type: null == type
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as TokenLogType,
+      amount: null == amount
+          ? _value.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as int,
+      balanceBefore: null == balanceBefore
+          ? _value.balanceBefore
+          : balanceBefore // ignore: cast_nullable_to_non_nullable
+              as int,
+      balanceAfter: null == balanceAfter
+          ? _value.balanceAfter
+          : balanceAfter // ignore: cast_nullable_to_non_nullable
+              as int,
+      description: freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      metadata: freezed == metadata
+          ? _value._metadata
+          : metadata // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>?,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$TokenLogModelImpl implements _TokenLogModel {
-  const _$TokenLogModelImpl({
-    required this.id,
-    required this.userId,
-    required this.type,
-    required this.amount,
-    required this.balanceBefore,
-    required this.balanceAfter,
-    this.description,
-    final Map<String, dynamic>? metadata,
-    required this.createdAt,
-  }) : _metadata = metadata;
+  const _$TokenLogModelImpl(
+      {required this.id,
+      required this.userId,
+      required this.type,
+      required this.amount,
+      required this.balanceBefore,
+      required this.balanceAfter,
+      this.description,
+      final Map<String, dynamic>? metadata,
+      required this.createdAt})
+      : _metadata = metadata;
 
   factory _$TokenLogModelImpl.fromJson(Map<String, dynamic> json) =>
       _$$TokenLogModelImplFromJson(json);
@@ -292,17 +281,16 @@ class _$TokenLogModelImpl implements _TokenLogModel {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    userId,
-    type,
-    amount,
-    balanceBefore,
-    balanceAfter,
-    description,
-    const DeepCollectionEquality().hash(_metadata),
-    createdAt,
-  );
+      runtimeType,
+      id,
+      userId,
+      type,
+      amount,
+      balanceBefore,
+      balanceAfter,
+      description,
+      const DeepCollectionEquality().hash(_metadata),
+      createdAt);
 
   /// Create a copy of TokenLogModel
   /// with the given fields replaced by the non-null parameter values.
@@ -314,22 +302,23 @@ class _$TokenLogModelImpl implements _TokenLogModel {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$TokenLogModelImplToJson(this);
+    return _$$TokenLogModelImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _TokenLogModel implements TokenLogModel {
-  const factory _TokenLogModel({
-    required final String id,
-    required final String userId,
-    required final TokenLogType type,
-    required final int amount,
-    required final int balanceBefore,
-    required final int balanceAfter,
-    final String? description,
-    final Map<String, dynamic>? metadata,
-    required final DateTime createdAt,
-  }) = _$TokenLogModelImpl;
+  const factory _TokenLogModel(
+      {required final String id,
+      required final String userId,
+      required final TokenLogType type,
+      required final int amount,
+      required final int balanceBefore,
+      required final int balanceAfter,
+      final String? description,
+      final Map<String, dynamic>? metadata,
+      required final DateTime createdAt}) = _$TokenLogModelImpl;
 
   factory _TokenLogModel.fromJson(Map<String, dynamic> json) =
       _$TokenLogModelImpl.fromJson;

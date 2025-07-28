@@ -12,8 +12,7 @@ part of 'token_model.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 TokenModel _$TokenModelFromJson(Map<String, dynamic> json) {
   return _TokenModel.fromJson(json);
@@ -42,19 +41,17 @@ mixin _$TokenModel {
 /// @nodoc
 abstract class $TokenModelCopyWith<$Res> {
   factory $TokenModelCopyWith(
-    TokenModel value,
-    $Res Function(TokenModel) then,
-  ) = _$TokenModelCopyWithImpl<$Res, TokenModel>;
+          TokenModel value, $Res Function(TokenModel) then) =
+      _$TokenModelCopyWithImpl<$Res, TokenModel>;
   @useResult
-  $Res call({
-    String userId,
-    int currentTokens,
-    int totalEarnedTokens,
-    int totalSpentTokens,
-    DateTime lastDailyReward,
-    DateTime createdAt,
-    DateTime updatedAt,
-  });
+  $Res call(
+      {String userId,
+      int currentTokens,
+      int totalEarnedTokens,
+      int totalSpentTokens,
+      DateTime lastDailyReward,
+      DateTime createdAt,
+      DateTime updatedAt});
 }
 
 /// @nodoc
@@ -80,39 +77,36 @@ class _$TokenModelCopyWithImpl<$Res, $Val extends TokenModel>
     Object? createdAt = null,
     Object? updatedAt = null,
   }) {
-    return _then(
-      _value.copyWith(
-            userId: null == userId
-                ? _value.userId
-                : userId // ignore: cast_nullable_to_non_nullable
-                      as String,
-            currentTokens: null == currentTokens
-                ? _value.currentTokens
-                : currentTokens // ignore: cast_nullable_to_non_nullable
-                      as int,
-            totalEarnedTokens: null == totalEarnedTokens
-                ? _value.totalEarnedTokens
-                : totalEarnedTokens // ignore: cast_nullable_to_non_nullable
-                      as int,
-            totalSpentTokens: null == totalSpentTokens
-                ? _value.totalSpentTokens
-                : totalSpentTokens // ignore: cast_nullable_to_non_nullable
-                      as int,
-            lastDailyReward: null == lastDailyReward
-                ? _value.lastDailyReward
-                : lastDailyReward // ignore: cast_nullable_to_non_nullable
-                      as DateTime,
-            createdAt: null == createdAt
-                ? _value.createdAt
-                : createdAt // ignore: cast_nullable_to_non_nullable
-                      as DateTime,
-            updatedAt: null == updatedAt
-                ? _value.updatedAt
-                : updatedAt // ignore: cast_nullable_to_non_nullable
-                      as DateTime,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      currentTokens: null == currentTokens
+          ? _value.currentTokens
+          : currentTokens // ignore: cast_nullable_to_non_nullable
+              as int,
+      totalEarnedTokens: null == totalEarnedTokens
+          ? _value.totalEarnedTokens
+          : totalEarnedTokens // ignore: cast_nullable_to_non_nullable
+              as int,
+      totalSpentTokens: null == totalSpentTokens
+          ? _value.totalSpentTokens
+          : totalSpentTokens // ignore: cast_nullable_to_non_nullable
+              as int,
+      lastDailyReward: null == lastDailyReward
+          ? _value.lastDailyReward
+          : lastDailyReward // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      updatedAt: null == updatedAt
+          ? _value.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+    ) as $Val);
   }
 }
 
@@ -120,20 +114,18 @@ class _$TokenModelCopyWithImpl<$Res, $Val extends TokenModel>
 abstract class _$$TokenModelImplCopyWith<$Res>
     implements $TokenModelCopyWith<$Res> {
   factory _$$TokenModelImplCopyWith(
-    _$TokenModelImpl value,
-    $Res Function(_$TokenModelImpl) then,
-  ) = __$$TokenModelImplCopyWithImpl<$Res>;
+          _$TokenModelImpl value, $Res Function(_$TokenModelImpl) then) =
+      __$$TokenModelImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String userId,
-    int currentTokens,
-    int totalEarnedTokens,
-    int totalSpentTokens,
-    DateTime lastDailyReward,
-    DateTime createdAt,
-    DateTime updatedAt,
-  });
+  $Res call(
+      {String userId,
+      int currentTokens,
+      int totalEarnedTokens,
+      int totalSpentTokens,
+      DateTime lastDailyReward,
+      DateTime createdAt,
+      DateTime updatedAt});
 }
 
 /// @nodoc
@@ -141,9 +133,8 @@ class __$$TokenModelImplCopyWithImpl<$Res>
     extends _$TokenModelCopyWithImpl<$Res, _$TokenModelImpl>
     implements _$$TokenModelImplCopyWith<$Res> {
   __$$TokenModelImplCopyWithImpl(
-    _$TokenModelImpl _value,
-    $Res Function(_$TokenModelImpl) _then,
-  ) : super(_value, _then);
+      _$TokenModelImpl _value, $Res Function(_$TokenModelImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of TokenModel
   /// with the given fields replaced by the non-null parameter values.
@@ -158,53 +149,50 @@ class __$$TokenModelImplCopyWithImpl<$Res>
     Object? createdAt = null,
     Object? updatedAt = null,
   }) {
-    return _then(
-      _$TokenModelImpl(
-        userId: null == userId
-            ? _value.userId
-            : userId // ignore: cast_nullable_to_non_nullable
-                  as String,
-        currentTokens: null == currentTokens
-            ? _value.currentTokens
-            : currentTokens // ignore: cast_nullable_to_non_nullable
-                  as int,
-        totalEarnedTokens: null == totalEarnedTokens
-            ? _value.totalEarnedTokens
-            : totalEarnedTokens // ignore: cast_nullable_to_non_nullable
-                  as int,
-        totalSpentTokens: null == totalSpentTokens
-            ? _value.totalSpentTokens
-            : totalSpentTokens // ignore: cast_nullable_to_non_nullable
-                  as int,
-        lastDailyReward: null == lastDailyReward
-            ? _value.lastDailyReward
-            : lastDailyReward // ignore: cast_nullable_to_non_nullable
-                  as DateTime,
-        createdAt: null == createdAt
-            ? _value.createdAt
-            : createdAt // ignore: cast_nullable_to_non_nullable
-                  as DateTime,
-        updatedAt: null == updatedAt
-            ? _value.updatedAt
-            : updatedAt // ignore: cast_nullable_to_non_nullable
-                  as DateTime,
-      ),
-    );
+    return _then(_$TokenModelImpl(
+      userId: null == userId
+          ? _value.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as String,
+      currentTokens: null == currentTokens
+          ? _value.currentTokens
+          : currentTokens // ignore: cast_nullable_to_non_nullable
+              as int,
+      totalEarnedTokens: null == totalEarnedTokens
+          ? _value.totalEarnedTokens
+          : totalEarnedTokens // ignore: cast_nullable_to_non_nullable
+              as int,
+      totalSpentTokens: null == totalSpentTokens
+          ? _value.totalSpentTokens
+          : totalSpentTokens // ignore: cast_nullable_to_non_nullable
+              as int,
+      lastDailyReward: null == lastDailyReward
+          ? _value.lastDailyReward
+          : lastDailyReward // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      updatedAt: null == updatedAt
+          ? _value.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+    ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
 class _$TokenModelImpl implements _TokenModel {
-  const _$TokenModelImpl({
-    required this.userId,
-    this.currentTokens = 0,
-    this.totalEarnedTokens = 0,
-    this.totalSpentTokens = 0,
-    required this.lastDailyReward,
-    required this.createdAt,
-    required this.updatedAt,
-  });
+  const _$TokenModelImpl(
+      {required this.userId,
+      this.currentTokens = 0,
+      this.totalEarnedTokens = 0,
+      this.totalSpentTokens = 0,
+      required this.lastDailyReward,
+      required this.createdAt,
+      required this.updatedAt});
 
   factory _$TokenModelImpl.fromJson(Map<String, dynamic> json) =>
       _$$TokenModelImplFromJson(json);
@@ -255,15 +243,14 @@ class _$TokenModelImpl implements _TokenModel {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    userId,
-    currentTokens,
-    totalEarnedTokens,
-    totalSpentTokens,
-    lastDailyReward,
-    createdAt,
-    updatedAt,
-  );
+      runtimeType,
+      userId,
+      currentTokens,
+      totalEarnedTokens,
+      totalSpentTokens,
+      lastDailyReward,
+      createdAt,
+      updatedAt);
 
   /// Create a copy of TokenModel
   /// with the given fields replaced by the non-null parameter values.
@@ -275,20 +262,21 @@ class _$TokenModelImpl implements _TokenModel {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$TokenModelImplToJson(this);
+    return _$$TokenModelImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _TokenModel implements TokenModel {
-  const factory _TokenModel({
-    required final String userId,
-    final int currentTokens,
-    final int totalEarnedTokens,
-    final int totalSpentTokens,
-    required final DateTime lastDailyReward,
-    required final DateTime createdAt,
-    required final DateTime updatedAt,
-  }) = _$TokenModelImpl;
+  const factory _TokenModel(
+      {required final String userId,
+      final int currentTokens,
+      final int totalEarnedTokens,
+      final int totalSpentTokens,
+      required final DateTime lastDailyReward,
+      required final DateTime createdAt,
+      required final DateTime updatedAt}) = _$TokenModelImpl;
 
   factory _TokenModel.fromJson(Map<String, dynamic> json) =
       _$TokenModelImpl.fromJson;

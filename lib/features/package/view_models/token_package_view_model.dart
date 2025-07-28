@@ -1,5 +1,5 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import '../../../providers/firebase_instance_provider.dart';
+import '../../../firebase_instances/firebase_instance_provider.dart';
 import '../interfaces/lib.dart';
 import '../models/lib.dart';
 import '../providers/lib.dart';
@@ -13,7 +13,8 @@ class TokenPackageViewModel extends _$TokenPackageViewModel {
   @override
   Future<TokenPackageStateModel> build() async {
     final firestoreInstance = ref.read(firebaseFirestoreProvider);
-    _packageService = FirebaseTokenPackageService(firestore: firestoreInstance);
+    _packageService =
+        FirebaseTokenPackageService(firestore: firestoreInstance, ref: ref);
 
     return await getData();
   }

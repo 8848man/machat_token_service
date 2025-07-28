@@ -13,14 +13,14 @@ String _$packageRegisterViewModelHash() =>
 @ProviderFor(PackageRegisterViewModel)
 final packageRegisterViewModelProvider =
     AutoDisposeNotifierProvider<PackageRegisterViewModel, void>.internal(
-      PackageRegisterViewModel.new,
-      name: r'packageRegisterViewModelProvider',
-      debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-          ? null
-          : _$packageRegisterViewModelHash,
-      dependencies: null,
-      allTransitiveDependencies: null,
-    );
+  PackageRegisterViewModel.new,
+  name: r'packageRegisterViewModelProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$packageRegisterViewModelHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
 
 typedef _$PackageRegisterViewModel = AutoDisposeNotifier<void>;
 // ignore_for_file: type=lint

@@ -1,5 +1,5 @@
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import '../../../providers/firebase_instance_provider.dart';
+import '../../../firebase_instances/firebase_instance_provider.dart';
 import '../models/lib.dart';
 import '../interfaces/token_service.dart';
 import '../providers/lib.dart';
