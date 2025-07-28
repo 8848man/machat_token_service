@@ -13,10 +13,19 @@ class TokenViewModel extends _$TokenViewModel {
   @override
   Future<TokenStateModel> build() async {
     final user = ref.read(firebaseAuthProvider).currentUser;
-    final uid = user?.uid;
+
+    // 사용자 정보가 없으면 초기 상태 반환
+    if (user == null) {
+      return TokenStateModel(
+        userToken: null,
+        tokenLogs: [],
+      );
+    }
+
+    final uid = user.uid;
     final TokenModel userToken =
-        await ref.watch(tokenStreamProvider(uid ?? '').future);
-    final List<TokenLogModel> tokenLogs = await loadUserTokenLogs(uid ?? '');
+        await ref.watch(tokenStreamProvider(uid).future);
+    final List<TokenLogModel> tokenLogs = await loadUserTokenLogs(uid);
     return TokenStateModel(
       userToken: userToken,
       tokenLogs: tokenLogs,
