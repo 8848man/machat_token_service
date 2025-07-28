@@ -226,20 +226,6 @@ class MCColors {
     }
   }
 
-  static Color get $color_blue_05 {
-    switch (theme) {
-      case ColorTheme.light:
-        return _fromHex('#BFDFFF');
-    }
-  }
-
-  static Color get $color_blue_00 {
-    switch (theme) {
-      case ColorTheme.light:
-        return _fromHex('#DDEEFF');
-    }
-  }
-
   //blue
 
   //red
